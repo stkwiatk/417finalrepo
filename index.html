@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Replay Harbor | Music, Movies & Games</title>
+  <meta name="description" content="Replay Harbor is a neighborhood media store specializing in CDs, movies on physical media, and video games from modern favorites back to the Atari 2600.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-theme="light">
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <div class="brand-block">
+        <p class="eyebrow">Music 'n More</p>
+        <a class="brand-mark" href="#top">Replay Harbor</a>
+        <p class="brand-copy">Physical media curated for collectors, casual shoppers, and nostalgic explorers.</p>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#collections">Collections</a>
+        <a href="#featured">Featured</a>
+        <a href="#contest">Contest</a>
+        <a href="#quick-order">Quick Order</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode" title="Switch to dark mode">
+        <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+        <span class="theme-icon theme-icon-moon" aria-hidden="true">☾</span>
+        <span class="visually-hidden">Theme toggle</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero-section" aria-labelledby="hero-heading">
+        <div class="hero-content">
+          <p class="section-tag">Replay Harbor Estd. 2002</p>
+          <h1 id="hero-heading">Phoenix Metro's downtown media destination</h1>
+          <p class="hero-text">
+            Find the soundtrack, movie night, or retro game you have been hunting for. Replay Harbor stocks cleaned and tested CDs, VHS tapes, DVDs, Blu-rays, and any video game you can imagine. We buy, sell, trade, and help collectors track down hard-to-find favorites.
+          </p>
+          <div class="hero-actions">
+            <a class="button-link primary-link" href="#quick-order">Shop quick picks</a>
+            <a class="button-link secondary-link" href="#contact">Ask us to hold an item</a>
+          </div>
+          <ul class="hero-highlights" aria-label="Store highlights">
+            <li>Fresh trade-ins processed every afternoon</li>
+            <li>Disc resurfacing and cartridge cleaning on site</li>
+            <li>Collector sleeves and replacement cases available</li>
+          </ul>
+        </div>
+        <aside class="hero-panel" aria-label="Store snapshot">
+          <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80" alt="Shelves of music and movie media in a warmly lit record store">
+          <div class="panel-details">
+            <h2>24/7/365</h2>
+            <p>Store open all-day, all-year. Because we know you never sleep.</p>
+            <address>
+              Located in the Wimbledon Common Urban Ctr.<br>
+              1234 Media Lane<br>
+              Phoenix, AZ 85001
+            </address>
+          </div>
+        </aside>
+      </section>
+
+      <section class="collections-section" id="collections" aria-labelledby="collections-heading">
+        <div class="section-heading">
+          <p class="section-tag">What we stock</p>
+          <h2 id="collections-heading">Built for serious browsing.</h2>
+        </div>
+        <div class="collection-grid">
+          <article class="collection-card">
+            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80" alt="A stack of compact discs beside headphones">
+            <h3>Music</h3>
+            <p>From jazz first pressings and classic rock essentials to new indie releases, our CD wall is organized by genre and refreshed all week long.</p>
+          </article>
+          <article class="collection-card">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=900&q=80" alt="Rows of movies on shelves in a home theater style shop">
+            <h3>Movies</h3>
+            <p>Browse cult horror, prestige box sets, anime, family staples, and hard-to-find catalog titles in every major physical format.</p>
+          </article>
+          <article class="collection-card">
+            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=900&q=80" alt="Vintage and modern video game controllers on a table">
+            <h3>Video Games</h3>
+            <p>We carry games, accessories, and select hardware from today's platforms all the way back to Atari 2600, NES, Megasis, and beyond.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="featured-section" id="featured" aria-labelledby="featured-heading">
+        <div class="section-heading">
+          <p class="section-tag">Product display</p>
+          <h2 id="featured-heading">Browse our variety</h2>
+        </div>
+        <div class="feature-layout">
+          <div class="feature-controls" aria-label="Choose a featured product">
+            <button class="feature-tab active" id="product-control-0" type="button" aria-pressed="true" data-product-control="0">Music</button>
+            <button class="feature-tab" id="product-control-1" type="button" aria-pressed="false" data-product-control="1">Movie</button>
+            <button class="feature-tab" id="product-control-2" type="button" aria-pressed="false" data-product-control="2">Video Games</button>
+          </div>
+          <article class="feature-panel" id="featured-product" aria-live="polite">
+            <img id="featured-image" src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=1200&q=80" alt="Blue-toned close-up of a jazz record collection and stereo equipment">
+            <div class="feature-copy">
+              <p class="section-tag">Now showing</p>
+              <h3 id="featured-name">Music</h3>
+              <p id="featured-description">
+                Our music wall is dedicated entirely to CDs, with CCM essentials, pop staples, soundtracks, landmarks, and fresh arrivals organized for easy crate-style browsing. If you want a dependable starting point, our staff usually guides shoppers toward timeless discs like MercyMe and Johnny Hates Jazz.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contest-section" id="contest" aria-labelledby="contest-heading">
+        <div class="section-heading">
+          <p class="section-tag">Game time!</p>
+          <h2 id="contest-heading">Number draw</h2>
+        </div>
+        <div class="contest-card">
+          <div>
+            <p>Pick a whole number from 1 to 10. We will reveal your guess next to the store's random draw and let you know if you matched it.</p>
+            <label for="guess-input">Your guess</label>
+            <input id="guess-input" name="guess-input" type="number" min="1" max="10" step="1">
+            <button class="action-button" id="guess-button" type="button">Reveal the draw</button>
+          </div>
+          <div class="result-card" id="guess-result" aria-live="polite">
+            <h3>Contest result</h3>
+            <p>Enter a number and press the button to see if you win.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="order-section" id="quick-order" aria-labelledby="order-heading">
+        <div class="section-heading">
+          <p class="section-tag">Browse</p>
+          <h2 id="order-heading">Featured products</h2>
+        </div>
+        <div class="order-layout">
+          <div class="order-grid">
+            <section class="order-column" aria-labelledby="trending-heading">
+              <h3 id="trending-heading">Trending</h3>
+              <article class="order-card">
+                <img src="https://m.media-amazon.com/images/I/81siK7k5y5L._SX522_.jpg" alt="The Wombles (Blu-ray)">
+                <h4>The Wombles (Blu-ray)</h4>
+                <p>Allow our new furry friends to Womble straight into your heart with a complete set of their adventures on Wimbledon Common.</p>
+                <p class="price-tag">$22</p>
+                <button class="action-button add-to-cart" type="button" data-name="The Wombles (Blu-ray)" data-price="22">Add to total</button>
+              </article>
+              <article class="order-card">
+                <img src="https://i.discogs.com/Hz3-EvFZ3E86nSiNfOn7kWD5zpcCQjzgsnKj8cR8BGw/rs:fit/g:sm/q:90/h:543/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzODEx/NjIxLTE1NjIzNjY1/NDQtODc5NC5qcGVn.jpeg" alt="Kylie Minogue - Step Back In Time (The Definitive Collection) (CD)">
+                <h4>Kylie Minogue - Step Back In Time (The Definitive Collection) (CD)</h4>
+                <p>Clean digipak, booklet included, tested in store. Pop at its most queenly and infectious!</p>
+                <p class="price-tag">$13</p>
+                <button class="action-button add-to-cart" type="button" data-name="Kylie Minogue - Step Back In Time (The Definitive Collection) (CD)" data-price="13">Add to total</button>
+              </article>
+            </section>
+            <section class="order-column" aria-labelledby="recommend-heading">
+              <h3 id="recommend-heading">We pick</h3>
+              <article class="order-card">
+                <img src="https://m.media-amazon.com/images/I/81BW1NpyxjS._SL1473_.jpg" alt="Super Mario Advance 4: Super Mario Bros 3 (GBA)">
+                <h4>Super Mario Advance 4: Super Mario Bros 3 (GBA)</h4>
+                <p>Authentic cartridge, cleaned pins, protective sleeve included.</p>
+                <p class="price-tag">$29</p>
+                <button class="action-button add-to-cart" type="button" data-name="Super Mario Advance 4: Super Mario Bros 3 (GBA)" data-price="29">Add to total</button>
+              </article>
+              <article class="order-card">
+                <img src="https://i.discogs.com/bodISmaHkFJiEbGlGpSNlaAdFt2bTob_zKP_thnjygI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc2NTMx/NDYtMTQ0NTk5MzQw/OS03MjIxLmpwZWc.jpeg" alt="LIFE">
+                <h4>ZOEgirl - Life (CD)</h4>
+                <p>A must-have for anyone seeking to get into our beloved Zigs!</p>
+                <p class="price-tag">$16</p>
+                <button class="action-button add-to-cart" type="button" data-name="ZOEgirl - Life (CD)" data-price="16">Add to total</button>
+              </article>
+            </section>
+            <section class="order-column" aria-labelledby="arrivals-heading">
+              <h3 id="arrivals-heading">Latest</h3>
+              <article class="order-card">
+                <img src="https://static.wikia.nocookie.net/disney/images/3/3a/Winnie-the-pooh-3.jpg" alt="The Many Adventures of Winnie the Pooh (VHS)">
+                <h4>The Many Adventures of Winnie the Pooh (VHS)</h4>
+                <p>1996 issue, clearest audio mix of any home media release, original packaging.</p>
+                <p class="price-tag">$25</p>
+                <button class="action-button add-to-cart" type="button" data-name="The Many Adventures of Winnie the Pooh (VHS)" data-price="25">Add to total</button>
+              </article>
+              <article class="order-card">
+                <img src="https://m.media-amazon.com/images/I/51qVhWRwyKL.jpg" alt="Rock Band (Xbox 360)">
+                <h4>Rock Band (X360)</h4>
+                <p>Complete case copy, ready for another co-op run.</p>
+                <p class="price-tag">18 M</p>
+                <button class="action-button add-to-cart" type="button" data-name="Rock Band (Xbox 360)" data-price="18">Add to total</button>
+              </article>
+            </section>
+          </div>
+          <aside class="cart-panel" aria-labelledby="summary-heading">
+            <h3 id="summary-heading">Order summary</h3>
+            <ul class="cart-list" id="cart-list">
+              <li>No items added yet.</li>
+            </ul>
+            <dl class="totals-list">
+              <div>
+                <dt>Subtotal</dt>
+                <dd id="subtotal-amount">0 M</dd>
+              </div>
+              <div>
+                <dt>Tax</dt>
+                <dd id="tax-amount">0 M</dd>
+              </div>
+              <div>
+                <dt>Shipping</dt>
+                <dd id="shipping-amount">0 M</dd>
+              </div>
+              <div class="grand-total">
+                <dt>Total</dt>
+                <dd id="total-amount">0 M</dd>
+              </div>
+            </dl>
+            <button class="action-button checkout-button" id="checkout-button" type="button">Check out</button>
+            <p class="checkout-message" id="checkout-message" aria-live="polite"></p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="services-section" aria-labelledby="services-heading">
+        <div class="section-heading">
+          <p class="section-tag">Store services</p>
+          <h2 id="services-heading">More than shelves and cases.</h2>
+        </div>
+        <div class="service-grid">
+          <article>
+            <h3>Trade-in or sell</h3>
+            <p>Bring in discs, tapes, and games for same-day store credit or cash offers based on condition and current demand.</p>
+          </article>
+          <article>
+            <h3>Collector help</h3>
+            <p>Looking for a genre run, a boutique Blu-ray label, or a specific cartridge revision? We keep a request list for local regulars.</p>
+          </article>
+          <article>
+            <h3>Media care</h3>
+            <p>Our staff can recommend sleeves, storage, and safe cleaning methods so your collection stays in top shape at home.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+        <div class="section-heading">
+          <p class="section-tag">Contact us</p>
+          <h2 id="contact-heading">Ask about an item or request a hold.</h2>
+        </div>
+        <div class="contact-layout">
+          <div class="contact-copy">
+            <p>
+              Tell us what you are looking for and how you want us to respond. We use your preferred contact method for hold requests, trade-in questions, and special-order follow-up.<br>
+            </p>
+            <p><strong>Phone:</strong> 480-555-5555</p>
+            <p><strong>Email:</strong> halloo@replayharbor.net</p>
+          </div>
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="field-group">
+              <label for="full-name">Full name <span aria-hidden="true">*</span></label>
+              <input id="full-name" name="full-name" type="text" required aria-required="true">
+              <p class="error-message" id="name-error" aria-live="polite"></p>
+            </div>
+
+            <fieldset class="field-group">
+              <legend>Preferred contact method <span aria-hidden="true">*</span></legend>
+              <div class="radio-row">
+                <label for="contact-phone">
+                  <input id="contact-phone" name="contact-method" type="radio" value="phone" checked required aria-required="true">
+                  Phone
+                </label>
+                <label for="contact-email">
+                  <input id="contact-email" name="contact-method" type="radio" value="email" required aria-required="true">
+                  Email
+                </label>
+              </div>
+              <p class="error-message" id="method-error" aria-live="polite"></p>
+            </fieldset>
+
+            <div class="field-group">
+              <label for="phone-number">Phone number</label>
+              <input id="phone-number" name="phone-number" type="tel">
+              <p class="error-message" id="phone-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field-group">
+              <label for="email-address">Email address</label>
+              <input id="email-address" name="email-address" type="email">
+              <p class="error-message" id="email-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field-group">
+              <label for="comments">Comments <span aria-hidden="true">*</span></label>
+              <textarea id="comments" name="comments" rows="5" required aria-required="true"></textarea>
+              <p class="error-message" id="comments-error" aria-live="polite"></p>
+            </div>
+
+            <button class="action-button" type="submit">Send request</button>
+          </form>
+        </div>
+        <section class="submission-panel" id="submission-panel" aria-live="polite" hidden>
+          <h3>Thank you for reaching out.</h3>
+          <p id="submission-message"></p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <p class="brand-mark footer-brand">Replay Harbor</p>
+        <p>Physical media, expertly curated.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#top">Back to top</a>
+        <a href="#collections">Browse categories</a>
+        <a href="#contact">Contact the store</a>
+      </nav>
+      <p>&copy; Replay Harbor. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
